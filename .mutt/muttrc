@@ -1,0 +1,20 @@
+set editor = "/usr/bin/emacs -nw %s --eval '(setq make-backup-files nil)'"
+#set editor = "vim"
+
+set send_charset= "utf-8"
+set charset     = "utf-8"
+
+set mbox_type   = "Maildir"
+set folder      = "~/Maildir
+set move        = no
+
+set sleep_time  = 0
+
+set sort        = threads
+set use_from    = yes
+set use_envelope_from = yes
+
+source ~/.mutt/mailboxes
+source ~/.mutt/signature
+source ~/.mutt/colors
+#source ~/.mutt/abook
