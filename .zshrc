@@ -15,7 +15,7 @@ autoload -Uz promptinit
 promptinit
 prompt fade blue
 
-export PATH=/home/rafal/bin:$PATH
+export PATH=/home/rafal/bin:$PATH:/usr/sbin
 
 # Display current branch in RPROMPT
 function current_branch {
@@ -37,3 +37,8 @@ bindkey '^r' history-incremental-search-backward
 bindkey '^R' history-incremental-pattern-search-backward
 bindkey '^[[1;5D' backward-word
 bindkey '^[[1;5C' forward-word
+bindkey \^K kill-line
+bindkey \^U backward-kill-line
+
+# Disable /etc/hosts completion, as it has no use for me
+zstyle ':completion:*' hosts off
