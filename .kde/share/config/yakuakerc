@@ -1,0 +1,32 @@
+[$Version]
+update_info=yakuake.upd:2.9.9-startupnotification
+
+[Appearance]
+BackgroundColor=0,0,0
+BackgroundColorOpacity=30
+TerminalHighlightOnManualActivation=true
+Translucency=true
+
+[Colors]
+CurrentPalette=Forty Colors
+
+[Desktop Entry]
+DefaultProfile=Shell.profile
+
+[Dialogs]
+FirstRun=false
+
+[Favorite Profiles]
+Favorites=
+
+[Shortcuts]
+next-session=Ctrl+PgDown
+next-terminal=Alt+Right
+previous-session=Ctrl+PgUp
+previous-terminal=Alt+Left
+split-left-right=Ctrl+Shift+O
+split-top-bottom=Ctrl+Shift+E
+view-full-screen=F11
+
+[Window]
+Width=100
