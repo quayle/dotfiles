@@ -40,5 +40,16 @@ bindkey '^[[1;5C' forward-word
 bindkey \^K kill-line
 bindkey \^U backward-kill-line
 
-# Disable /etc/hosts completion, as it has no use for me
+# Disable /etc/hosts completion, as it has no use for me and slows down zsh
 zstyle ':completion:*' hosts off
+
+# ZSH tab completion of git commands is very slow. How can I turn it off
+# http://superuser.com/questions/458906/ddg#459057
+__git_files () { 
+    _wanted files expl 'local files' _files     
+}
+
+alias xdebug-on='sudo php5enmod -s cli xdebug'
+alias xdebug-off='sudo php5dismod -s cli xdebug'
+alias xhprof-on='sudo php5enmod -s fpm xhprof'
+alias xhprof-off='sudo php5dismod -s fpm xhprof'
