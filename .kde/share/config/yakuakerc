@@ -3,7 +3,7 @@ update_info=yakuake.upd:2.9.9-startupnotification
 
 [Appearance]
 BackgroundColor=0,0,0
-BackgroundColorOpacity=30
+BackgroundColorOpacity=10
 TerminalHighlightOnManualActivation=true
 Translucency=true
 
@@ -29,4 +29,7 @@ split-top-bottom=Ctrl+Shift+E
 view-full-screen=F11
 
 [Window]
+Height=70
+Position=100
+ShowOnAllDesktops=true
 Width=100
