@@ -1,0 +1,46 @@
+[Breeze Dark]
+dummy=prevent-empty-group
+
+[KDE]
+dummy=prevent-empty-group
+
+[Normal]
+dummy=prevent-empty-group
+
+[Printing]
+dummy=prevent-empty-group
+
+[Solarized (dark)]
+dummy=prevent-empty-group
+
+[Solarized.Dark.Rafal]
+Color Background=0,43,54
+Color Code Folding=108,113,196
+Color Current Line Number=101,123,131
+Color Highlighted Bracket=7,54,66
+Color Highlighted Line=7,54,66
+Color Icon Bar=7,54,66
+Color Indentation Line=7,54,66
+Color Line Number=101,123,131
+Color MarkType 1=38,139,210
+Color MarkType 2=220,50,47
+Color MarkType 3=181,137,0
+Color MarkType 4=211,54,130
+Color MarkType 5=147,161,161
+Color MarkType 6=133,153,0
+Color MarkType 7=220,50,47
+Color Modified Lines=203,75,22
+Color Replace Highlight=133,153,0
+Color Saved Lines=42,161,152
+Color Search Highlight=181,137,0
+Color Selection=238,232,213
+Color Separator=101,123,131
+Color Spelling Mistake Line=220,50,47
+Color Tab Marker=147,161,161
+Color Template Background=7,54,66
+Color Template Editable Placeholder=7,54,66
+Color Template Focused Editable Placeholder=7,54,66
+Color Template Not Editable Placeholder=7,54,66
+Color Word Wrap Marker=101,123,131
+Font=Hack,9,-1,7,50,0,0,0,0,0
+dummy=prevent-empty-group
