@@ -215,7 +215,8 @@ bar {
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.
     #status_command while date +'%Y-%m-%d %H:%M:%S %p'; do sleep 1; done
-    status_command i3status
+    #status_command i3status
+    swaybar_command waybar
 
     colors {
         #statusline #e0def4
@@ -230,6 +231,17 @@ include /etc/sway/config.d/*
 
 set $wob bash ~/.config/sway/scripts/wob.sh
 
-bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+# `wev` to find keys
+#bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+bindsym XF86AudioPlay exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+#bindsym XF86AudioMicMute exec volumectl -m toggle-mute
 bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ && $wob $(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{ print $2 * 100 }')
 bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- && $wob $(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{ print $2 * 100 }')
+#bindsym XF86MonBrightnessUp exec lightctl up
+#bindsym XF86MonBrightnessDown exec lightctl down
+#XF86Reload
+#XF86Search
+#XF86Favorites
+#XF86Explorer
+#XF86Mail
+#XF86HomePag
