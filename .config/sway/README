@@ -1,4 +1,4 @@
-apt-get install sway swaybg wlogout i3status
+apt-get install sway swaybg wlogout i3status swaylock swayidle wob
 
 wlogout
 =======
