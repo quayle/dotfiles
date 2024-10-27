@@ -1,0 +1,11 @@
+apt-get install sway swaybg wlogout i3status
+
+wlogout
+=======
+
+https://github.com/ArtsyMacaw/wlogout
+
+i3status
+========
+
+https://github.com/i3/i3status
