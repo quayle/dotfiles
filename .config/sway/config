@@ -21,7 +21,6 @@ set $term foot
 set $menu dmenu_path | dmenu | xargs swaymsg exec --
 
 include /etc/sway/config-vars.d/*
-#include ~/.config/sway/scripts/*
 
 ### Output configuration
 #
@@ -65,6 +64,7 @@ output * bg /usr/share/wallpapers/Next/contents/images/1920x1080.png fill
 # See: https://wiki.archlinux.org/title/Sway#Keymap
 input * {
     xkb_layout "pl,us"
+    xkb_numlock enabled
 }
 
 ### Key bindings
@@ -227,3 +227,9 @@ bar {
 }
 
 include /etc/sway/config.d/*
+
+set $wob bash ~/.config/sway/scripts/wob.sh
+
+bindsym XF86AudioMute exec wpctl set-mute @DEFAULT_AUDIO_SINK@ toggle
+bindsym XF86AudioRaiseVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%+ && $wob $(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{ print $2 * 100 }')
+bindsym XF86AudioLowerVolume exec wpctl set-volume @DEFAULT_AUDIO_SINK@ 5%- && $wob $(wpctl get-volume @DEFAULT_AUDIO_SINK@ | awk '{ print $2 * 100 }')
