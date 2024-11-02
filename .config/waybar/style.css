@@ -5,8 +5,9 @@
 }
 
 window#waybar {
-    background-color: rgba(43, 48, 59, 0.5);
-    border-bottom: 3px solid rgba(100, 114, 125, 0.5);
+    /*background-color: rgba(43, 48, 59, 0.5);*/
+    background-color: rgba(24, 24, 24, 0.9);
+    /*border-bottom: 3px solid rgba(100, 114, 125, 0.5);*/
     color: #ffffff;
     transition-property: background-color;
     transition-duration: .5s;
@@ -87,9 +88,14 @@ button:hover {
 #mode,
 #idle_inhibitor,
 #scratchpad,
+#language,
 #mpd {
     padding: 0 10px;
-    color: #ffffff;
+
+    color: #6e6a86;
+    margin: 0.15em;
+    border: 0.1em solid #191724;
+    background-color: #1f1d2e;
 }
 
 #window,
@@ -107,6 +113,7 @@ button:hover {
     margin-right: 0;
 }
 
+/*
 #clock {
     background-color: #64727D;
 }
@@ -115,7 +122,7 @@ button:hover {
     background-color: #ffffff;
     color: #000000;
 }
-
+*/
 #battery.charging, #battery.plugged {
     color: #ffffff;
     background-color: #26A65B;
@@ -141,7 +148,7 @@ button:hover {
 label:focus {
     background-color: #000000;
 }
-
+/*
 #cpu {
     background-color: #2ecc71;
     color: #000000;
@@ -158,30 +165,30 @@ label:focus {
 #backlight {
     background-color: #90b1b1;
 }
-
+*/
 #network {
-    background-color: #2980b9;
+/*    background-color: #2980b9;*/
 }
 
 #network.disconnected {
-    background-color: #f53c3c;
+/*    background-color: #f53c3c;*/
 }
 
 #pulseaudio {
-    background-color: #f1c40f;
-    color: #000000;
+/*    background-color: #f1c40f;
+    color: #000000;*/
 }
 
 #pulseaudio.muted {
-    background-color: #90b1b1;
-    color: #2a5c45;
+/*    background-color: #90b1b1;
+    color: #2a5c45;*/
 }
 
 #wireplumber {
-    background-color: #fff0f5;
+/*    background-color: #fff0f5;
     color: #000000;
+*/
 }
-
 #wireplumber.muted {
     background-color: #f53c3c;
 }
@@ -209,7 +216,7 @@ label:focus {
 }
 
 #tray {
-    background-color: #2980b9;
+    /*background-color: #2980b9;*/
 }
 
 #tray > .passive {
@@ -248,8 +255,9 @@ label:focus {
 }
 
 #language {
-    background: #00b093;
+/*    background: #00b093;
     color: #740864;
+*/
     padding: 0 5px;
     margin: 0 5px;
     min-width: 16px;

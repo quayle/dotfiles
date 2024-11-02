@@ -1,62 +1,52 @@
+/*
+ * https://cloudninja.pw/docs/wofi.html
+ * https://rosepinetheme.com/palette/ingredients/
+ */
 /* Rosé Pine */
 /*
 :root {
 --base-color: #191724;
---base-color-rgb: 25, 23, 36;
 --surface-color: #1f1d2e;
---surface-color-rgb: 31, 29, 46;
 --overlay-color: #26233a;
---overlay-color-rgb: 38, 35, 58;
 --muted-color: #6e6a86;
---muted-color-rgb: 110, 106, 134;
 --subtle-color: #908caa;
---subtle-color-rgb: 144, 140, 170;
 --text-color: #e0def4;
---text-color-rgb: 224, 222, 244;
 --love-color: #eb6f92;
---love-color-rgb: 235, 111, 146;
 --gold-color: #f6c177;
---gold-color-rgb: 246, 193, 119;
 --rose-color: #ebbcba;
---rose-color-rgb: 235, 188, 186;
 --pine-color: #31748f;
---pine-color-rgb: 49, 116, 143;
 --foam-color: #9ccfd8;
---foam-color-rgb: 196, 167, 231;
 --iris-color: #c4a7e7;
---iris-color-rgb: 196, 167, 231;
 --highlight-low: #21202e;
---highlight-log-rgb: 33, 32, 46;
 --highlight-med: #403d52;
---highlight-med-rgb: 64, 61, 82;
 --highlight-high: #524f67;
---highlight-high-rgb: 82, 79, 103;
 }
 */
 
 window {
     font-family: "Iosevka";
     margin: 0;
-    border: 1px solid rgb(110, 106, 134);
-    background-color: rgb(31, 29, 46);
+    border: 1px solid #6e6a86;
     font-size: 16px;
+    background-color: #181818;
 }
 
 #input {
-    background-color: rgb(25, 23, 36);
-    color: rgb(144, 140, 170);
+    background-color: #191724;
+    color: #908caa;
     margin: 1px;
 }
 #entry {
-    color: rgb(110, 106, 134);
+    color: #6e6a86;
     margin: 0.15em;
-    border: 0.1em solid rgb(25, 23,36);
+    border: 0.1em solid #191724;
+    background-color: #1f1d2e;
 }
 #entry:selected {
-    background-color: rgb(38, 35, 58);
-    border: 1px solid rgb(196, 167, 231);
+    background-color: #26233a;
+    border: 1px solid #c4a7e7;
 }
 
 #text:selected {
-    color: rgb(144, 140, 170);
+    color: #f6c177;
 }
