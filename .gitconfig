@@ -1,0 +1,10 @@
+[user]
+	name = Rafał Długołęcki
+	email = rafal@dlugolecki.net.pl
+[merge]
+	tool = diffuse
+	conflictStyle = zdiff3
+[diff]
+	tool = diffuse
+[core]
+	excludesfile = /home/rafal/.gitignore_global
