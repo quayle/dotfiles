@@ -2,7 +2,7 @@
 
 SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
-configs=("foot" "nvim" "sway" "swayidle" "swaylock" "waybar" "wlogout" "wob")
+configs=("alacritty" "foot" "i3" "i3status" "nvim" "rofi" "sway" "swayidle" "swaylock" "waybar" "wlogout" "wob" "wofi")
 
 for config in ${configs[@]}; do
     if test -L "$HOME/.config/$config"; then
