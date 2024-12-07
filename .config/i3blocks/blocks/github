@@ -1,3 +1,19 @@
 #!/bin/bash
 
-gh api '/notifications?participating=true&review_requested=true' -q '{ text: length }' | jq .text | cat -
+status=$(gh >/dev/null && gh auth status 2>&1 | grep -q -m 1 'Logged in')
+
+if [[ "${status}" -ne 0 ]]; then
+    echo "-"
+    echo "-"
+    echo ""
+fi
+
+if [[ "${BLOCK_BUTTON}" -eq 1 ]]; then
+    /usr/bin/firefox --new-tab https://github.com/notifications
+fi
+
+unread=$(gh api '/notifications?participating=true&review_requested=true' -q '{ text: length }' | jq .text | cat -)
+
+echo "${unread}"
+echo "${unread}"
+echo ""
