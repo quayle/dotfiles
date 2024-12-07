@@ -1,0 +1,3 @@
+#!/bin/bash
+
+gh api '/notifications' -q '{ text: length }' | jq .text | cat -
