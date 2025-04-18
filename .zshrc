@@ -15,7 +15,8 @@ autoload -Uz promptinit
 promptinit
 prompt fade blue
 
-export PATH=/home/rafal/bin:$PATH:/usr/sbin
+export PATH=$HOME/opt/go/bin:$PATH
+export PATH=$HOME/bin:$PATH:/usr/sbin
 
 # Display current branch in RPROMPT
 function current_branch {
