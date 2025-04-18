@@ -43,7 +43,8 @@ command=~/.config/i3blocks/blocks/github
 label=♪
 instance=Master
 #instance=PCM
-interval=once
+#interval=once
+interval=2
 signal=10
 
 # Network interface monitoring

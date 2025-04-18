@@ -16,5 +16,7 @@ set use_envelope_from = yes
 
 source ~/.mutt/mailboxes
 source ~/.mutt/signature
-source ~/.mutt/colors
+
+source ~/.mutt/dracula.muttrc
+#source ~/.mutt/colors
 #source ~/.mutt/abook
