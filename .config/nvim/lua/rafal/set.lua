@@ -19,3 +19,15 @@ vim.opt.scrolloff = 8
 vim.opt.colorcolumn = "80,120"
 
 vim.g.mapleader = " "
+
+-- whitechars
+-- :set listchars=eol:⏎,tab:␉·,trail:␠,nbsp:⎵
+vim.opt.listchars = {
+    eol = '⏎',   -- U+21B5
+    tab = '├─>',  -- U+BB
+--    tab = '» ',  -- U+BB
+    trail = '·', -- U+B7
+    nbsp = '⎵'   -- U+23B5
+}
+-- vim.opt.list = true
+-- :set list
