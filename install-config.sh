@@ -16,3 +16,13 @@ done
 
 # sudo update-alternatives --install /usr/bin/editor editor /usr/local/bin/nvim 1 && \
 # sudo update-alternatives --set editor /usr/local/bin/nvim
+#
+
+share="fonts"
+if test -L "$HOME/.local/share/$share"; then
+    echo "Not linking '$share' as link already exists";
+elif test -d "$HOME/.local/share/$share"; then
+    echo "Not linking '$share' as directory already exists";
+else
+    ln -s "$DOTDIR/.local/share/$share" "$HOME/.local/share/$share";
+fi;
