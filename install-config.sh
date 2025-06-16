@@ -15,10 +15,7 @@ for config in ${configs[@]}; do
     fi;
 done
 
-# sudo update-alternatives --install /usr/bin/editor editor /usr/local/bin/nvim 1 && \
-# sudo update-alternatives --set editor /usr/local/bin/nvim
-#
-
+# $XDG_DATA_HOME == ~/.local/share
 share="fonts"
 if test -L "$HOME/.local/share/$share"; then
     echo "[-] Not linking '$share' as link already exists";
