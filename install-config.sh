@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-SCRIPT_DIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
+DOTDIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
 configs=("alacritty" "foot" "i3" "i3status" "i3blocks" "nvim" "rofi" "sway" "swayidle" "swaylock" "waybar" "wlogout" "wob" "wofi")
 
@@ -10,6 +10,9 @@ for config in ${configs[@]}; do
     elif test -d "$HOME/.config/$config"; then
         echo "Not linking '$config' as directory already exists";
     else 
-        ln -s "$SCRIPT_DIR/.config/$config" "$HOME/.config/$config";
+        ln -s "$DOTDIR/.config/$config" "$HOME/.config/$config";
     fi;
 done
+
+# sudo update-alternatives --install /usr/bin/editor editor /usr/local/bin/nvim 1 && \
+# sudo update-alternatives --set editor /usr/local/bin/nvim
