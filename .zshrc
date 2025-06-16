@@ -15,8 +15,9 @@ autoload -Uz promptinit
 promptinit
 prompt fade blue
 
-export PATH=$HOME/opt/go/bin:$PATH
-export PATH=$HOME/bin:$PATH:/usr/sbin
+export PATH="$HOME/opt/go/bin:$HOME/go/bin:$PATH"
+export PATH="$HOME/.symfony5/bin:$PATH"
+export PATH="$HOME/bin:$PATH:/usr/sbin"
 
 # Display current branch in RPROMPT
 function current_branch {
