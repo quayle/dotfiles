@@ -7,7 +7,8 @@ vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 vim.keymap.set("v", "<leader>y", '"+y') -- copy to system clipboard
 vim.keymap.set("n", "<leader>p", '"+p') -- paste from system clipboard
 
-vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>') -- clear highlights when <ESC> in normal mode
+-- CTRL-L
+-- vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>') -- clear highlights when <ESC> in normal mode
 
 vim.opt.nu = true
 vim.opt.relativenumber = true
