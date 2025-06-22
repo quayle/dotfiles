@@ -2,9 +2,11 @@
 	name = Rafał Długołęcki
 	email = rafal@dlugolecki.net.pl
 [merge]
-	tool = diffuse
+    tool = vimdiff
 	conflictStyle = zdiff3
 [diff]
-	tool = diffuse
+	tool = vimdiff
 [core]
 	excludesfile = /home/rafal/.gitignore_global
+[difftool]
+	prompt = false
