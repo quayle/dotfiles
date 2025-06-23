@@ -8,3 +8,7 @@
     conflictStyle = zdiff3
 [diff]
     tool = vimdiff
+[includeIf "gitdir:~/prj/Effiana/"]
+  path = ~/.gitconfig-work
+[includeIf "gitdir:~/prj/BrandOriented/"]
+  path = ~/.gitconfig-work
