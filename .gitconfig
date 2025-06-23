@@ -1,12 +1,10 @@
 [user]
-	name = Rafał Długołęcki
-	email = rafal@dlugolecki.net.pl
+    name = Rafał Długołęcki
+    email = rafal@dlugolecki.net.pl
 [core]
-	excludesfile = /home/rafal/.gitignore_global
+    excludesfile = /home/rafal/.gitignore_global
 [merge]
     tool = vimdiff
-	conflictStyle = zdiff3
+    conflictStyle = zdiff3
 [diff]
-	tool = vimdiff
-[difftool]
-	prompt = false
+    tool = vimdiff
