@@ -6,7 +6,7 @@ configs=("alacritty" "fontconfig" "foot" "i3" "i3status" "i3blocks" "nvim" "rofi
 
 for config in ${configs[@]}; do
     if test -L "$HOME/.config/$config"; then
-        echo "[-] not linking '$config' as link already exists";
+        echo "[-] Not linking '$config' as link already exists";
     elif test -d "$HOME/.config/$config"; then
         echo "[-] Not linking '$config' as directory already exists";
     else 
@@ -16,12 +16,14 @@ for config in ${configs[@]}; do
 done
 
 # $XDG_DATA_HOME == ~/.local/share
-share="fonts"
-if test -L "$HOME/.local/share/$share"; then
-    echo "[-] Not linking '$share' as link already exists";
-elif test -d "$HOME/.local/share/$share"; then
-    echo "[-] Not linking '$share' as directory already exists";
-else
-    ln -s "$DOTDIR/.local/share/$share" "$HOME/.local/share/$share";
-    echo "[+] Linking '$config'";
-fi;
+locals=("fonts" "konsole")
+for share in ${locals[@]}; do
+    if test -L "$HOME/.local/share/$share"; then
+        echo "[-] Not linking '$share' as link already exists";
+    elif test -d "$HOME/.local/share/$share"; then
+        echo "[-] Not linking '$share' as directory already exists";
+    else
+        ln -s "$DOTDIR/.local/share/$share" "$HOME/.local/share/$share";
+        echo "[+] Linking '$share";
+    fi;
+done
