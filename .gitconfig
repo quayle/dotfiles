@@ -8,6 +8,8 @@
     conflictStyle = zdiff3
 [diff]
     tool = vimdiff
+[url "ssh://git@github.com/"]
+    insteadOf = https://github.com/
 [includeIf "gitdir:~/prj/Effiana/"]
   path = ~/.gitconfig-work
 [includeIf "gitdir:~/prj/BrandOriented/"]
