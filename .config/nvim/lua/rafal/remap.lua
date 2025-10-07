@@ -10,7 +10,7 @@ vim.keymap.set("n", "<leader>p", '"+p') -- paste from system clipboard
 -- CTRL-L
 -- vim.keymap.set('n', '<Esc>', '<cmd>nohlsearch<CR>') -- clear highlights when <ESC> in normal mode
 
-vim.opt.nu = true
+vim.opt.number = true
 vim.opt.relativenumber = true
 
 vim.opt.tabstop = 4
