@@ -54,11 +54,27 @@ endif
 syntax on
 " colorscheme gruvbox
 colorscheme desert
+set history=1000
 
 set number
 set relativenumber
 set ai           "" auto indent
+"set si			 "" smart indent
 set ls=2         "" show status line
 set tabstop=4    "" tab width is 4 spaces
 set shiftwidth=4 ""
 
+" Show cursor position
+set ruler
+
+" Show incomplete commands
+set showcmd
+" Menu when using tab completion
+set wildmenu
+set scrolloff=8
+
+" set ignorecas
+" set smartcase
+
+" let mapleader=" "
+" map <leader>w :w!<CR>
