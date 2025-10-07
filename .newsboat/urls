@@ -1,6 +1,7 @@
 https://github.com/golang/go/releases.atom
 https://www.kernel.org/feeds/kdist.xml
 http://rss.slashdot.org/Slashdot/slashdot
+https://news.ycombinator.com/rss
 http://feeds.feedburner.com/tweakers/mixed
 https://xkcd.com/atom.xml
 
@@ -9,3 +10,4 @@ https://alistapart.com/main/feed/
 
 http://feeds.feedburner.com/CertPolska
 https://bartoszmilewski.com/feed/
+https://t2sde.org/rss.xml
