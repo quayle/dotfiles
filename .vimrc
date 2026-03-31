@@ -52,8 +52,13 @@ if has('syntax') && has('eval')
 endif
 
 syntax on
-" colorscheme gruvbox
+if (has("termguicolors"))
+  set termguicolors
+endif
+
 colorscheme desert
+colorscheme GruberDarker
+
 set history=1000
 
 set number
