@@ -78,3 +78,5 @@ set scrolloff=8
 
 " let mapleader=" "
 " map <leader>w :w!<CR>
+
+set mouse=a
