@@ -20,3 +20,9 @@ sudo update-alternatives --set vim /usr/local/bin/nvim
 # update-alternatives --remove vim /usr/local/bin/nvim
 
 echo "[ ] Check: .config/nvim/install.sh"
+
+
+mkdir -p ~/.vim/pack/local/start
+cd ~/.vim/pack/local/start
+#git clone https://github.com/editorconfig/editorconfig-vim.git
+#git clone --depth=1 https://github.com/ctrlpvim/ctrlp.vim.git
