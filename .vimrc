@@ -68,6 +68,7 @@ set ai           "" auto indent
 set ls=2         "" show status line
 set tabstop=4    "" tab width is 4 spaces
 set shiftwidth=4 ""
+set colorcolumn=80,120
 
 " Show cursor position
 set ruler
@@ -85,3 +86,11 @@ set scrolloff=8
 " map <leader>w :w!<CR>
 
 set mouse=a
+
+let g:fzf_vim = {}
+let g:fzf_action = {
+  \ 'ctrl-t': 'tab split',
+  \ 'ctrl-x': 'split',
+  \ 'ctrl-v': 'vsplit' }
+
+nnoremap <C-p> :Files<CR>
