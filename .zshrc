@@ -56,5 +56,8 @@ export NVM_DIR="$HOME/.nvm"
 
 alias vimdiff="vim -d"
 
-source <(kubectl completion zsh)
-export MINIKUBE_IN_STYLE=false
+if command -v kubectl > /dev/null 2>&1
+then
+    source <(kubectl completion zsh)
+    export MINIKUBE_IN_STYLE=false
+fi
