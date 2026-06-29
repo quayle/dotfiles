@@ -10,7 +10,7 @@
  '(custom-enabled-themes '(gruber-darker))
  '(custom-safe-themes
    '("01a9797244146bbae39b18ef37e6f2ca5bebded90d9fe3a2f342a9e863aaa4fd" default))
- '(package-selected-packages '(gruber-darker-theme))
+ '(package-selected-packages '(php-mode gruber-darker-theme))
  '(show-paren-mode t))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -30,3 +30,5 @@
 ;; Show current column and line numbers
 (column-number-mode t)
 (line-number-mode t)
+
+(editorconfig-mode 1)
