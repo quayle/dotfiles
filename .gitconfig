@@ -3,6 +3,8 @@
     email = rafal@dlugolecki.net.pl
 [core]
     excludesfile = /home/rafal/.gitignore_global
+[init]
+  defaultBranch = master
 [merge]
     tool = vimdiff
     conflictStyle = zdiff3
