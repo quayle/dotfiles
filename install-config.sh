@@ -2,7 +2,7 @@
 
 DOTDIR=$( cd -- "$( dirname -- "${BASH_SOURCE[0]}" )" &> /dev/null && pwd )
 
-configs=("alacritty" "fontconfig" "foot" "i3" "i3status" "i3blocks" "nvim" "rofi" "sway" "swayidle" "swaylock" "waybar" "wlogout" "wob" "wofi")
+configs=("alacritty" "fontconfig" "foot" "i3" "i3status" "i3blocks" "nvim" "rofi" "sway" "swayidle" "swaylock" "waybar" "wlogout" "wob" "wofi", "user-dirs.dirs", "user-dirs.locale", "gh")
 
 for config in ${configs[@]}; do
     if test -L "$HOME/.config/$config"; then
@@ -27,3 +27,17 @@ for share in ${locals[@]}; do
         echo "[+] Linking '$share";
     fi;
 done
+
+#dots=$(".zshenv", ".zshrc", ".vimrc", ".vim", ".tmux.conf", ".tmux", ".profile")
+#for dot in ${dots[@]}; do
+#    if test -L "$HOME/$dot"; then
+#        echo "[-] Not linking '$dot' as link already exists";
+#    elif test -d "$HOME/$dot"; then
+#        echo "[-] Not linking '$dot' as directory already exists";
+#    elif test -f "$HOME/$dot"; then
+#        echo "[-] Not linking '$dot' as file already exists";
+#    else
+#        ln -s "$DOTDIR/$dot" "$HOME/$dot";
+#        echo "[+] Linking '$dot";
+#    fi;
+#done;
