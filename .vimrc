@@ -24,6 +24,7 @@ if has("vms")
 else
   set backup            " keep a backup file (restore to previous version)
   if has('persistent_undo')
+    set undodir=$HOME/.vim/undo     "directory where the undo files will be stored
     set undofile        " keep an undo file (undo changes after closing)
   endif
 endif
