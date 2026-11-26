@@ -61,3 +61,5 @@ then
     source <(kubectl completion zsh)
     export MINIKUBE_IN_STYLE=false
 fi
+
+alias youtube-mp3='youtube-dl --extract-audio --audio-format mp3'
